@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pamantasan Lungsod ng San Pablo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('PLSP1.PNG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        header {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        header img {
+            max-height: 60px;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000000;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            color: white;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .main-text {
+            color: white;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .dropdown-section {
+            margin-top: 1rem;
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+        }
+        .dropdown-content {
+            display: none;
+            background-color:#008000;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+        .dropdown-content.show {
+            display: block;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="PLSP.jpg" alt="Pamantasan ng Lungsod ng San Pablo Logo"> 
+        <h1>Pamantasan ng Lungsod ng San Pablo</h1>
+    </header>
+    <nav>
+        <a href="#philosophy" onclick="toggleDropdown('philosophyDropdownContent')">Philosophy</a>
+        <a href="#programs" onclick="toggleDropdown('programDropdownContent')">Programs</a> 
+        <a href="#contact">Contact</a>
+        <a href="#vision" onclick="toggleDropdown('visionDropdownContent')">Vision</a>
+        <a href="#mission" onclick="toggleDropdown('missionDropdownContent')">Mission</a>
+        <a href="#goals" onclick="toggleDropdown('goalsDropdownContent')">Goals</a>
+        <a href="#objectives" onclick="toggleDropdown('objectivesDropdownContent')">Objectives</a>
+        <a href="#quality-policy" onclick="toggleDropdown('qualityPolicyDropdownContent')">Quality Policy</a>
+        <a href="#core-values" onclick="toggleDropdown('coreValuesDropdownContent')">Core Values</a>
+    </nav>
+    <main>
+        <!-- Philosophy Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('philosophyDropdownContent')">Click to View Philosophy</div>
+        <div id="philosophyDropdownContent" class="dropdown-content">
+            The Pamantasan ng Lungsod ng San Pablo is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society.
+        </div>
+
+        <!-- Vision Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('visionDropdownContent')">Click to View Vision</div>
+        <div id="visionDropdownContent" class="dropdown-content">
+            The Pamantasan ng Lungsod ng San Pablo envisions itself as a Center of Excellence in 2035, upholding glocally-responsive education dedicated to transforming lives and empowering communities.
+        </div>
+
+        <!-- Mission Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('missionDropdownContent')">Click to View Mission</div>
+        <div id="missionDropdownContent" class="dropdown-content">
+            The Pamantasan ng Lungsod ng San Pablo mission statement is to create a learning community that generates God-loving and holistic graduates prepared for civic engagement and academic and life success by strengthening and synergizing instruction, research and extension, administration and student development.
+        </div>
+
+        <!-- Goals Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('goalsDropdownContent')">Click to View Goals</div>
+        <div id="goalsDropdownContent" class="dropdown-content">
+            <ul>
+                <li>University and Academic Excellence</li>
+                <li>Sustainable Linkages and Community Engagement Programs</li>
+                <li>Relevant and Responsive Governance</li>
+                <li>Strengthened University Research Culture</li>
+                <li>Nurturing and Impactful Student Life and Success Program</li>
+            </ul>
+        </div>
+
+        <!-- Objectives Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('objectivesDropdownContent')">Click to View Objectives</div>
+        <div id="objectivesDropdownContent" class="dropdown-content">
+            <ul>
+                <li>To provide relevant knowledge and to develop the skills, competencies, habits, attitudes, and values of the students required in the chosen profession.</li>
+                <li>To advance human knowledge through study and research.</li>
+                <li>To give professional training in scientific, cultural, technological, industrial and vocational fields.</li>
+                <li>To mold students to become professionally competent, creative, and capable of making free, morally upright choices and decisions and serve as positive agents of change in their respective community.</li>
+                <li>To provide opportunities for personal growth in leadership and community building through a network of student curricular, extra and co-curricular activities as well as human resource development programs for continuous growth of students, faculty and staff.</li>
+            </ul>
+        </div>
+
+        <!-- Quality Policy Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('qualityPolicyDropdownContent')">Click to View Quality Policy</div>
+        <div id="qualityPolicyDropdownContent" class="dropdown-content">
+            The Pamantasan ng Lungsod ng San Pablo commits to sustainable quality education adhering to the highest standards of excellence in instruction, research, extension, production, and administrative services by upholding a continuous quality management system for client satisfaction through employee and student development anchored on constitutional mandates, statutory, and regulatory requirements while promoting God-loving, safe, and green environment for all.
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('coreValuesDropdownContent')">Click to View Core Values</div>
+        <div id="coreValuesDropdownContent" class="dropdown-content">
+            <ul>
+                <li><span class="bold-text">Patriotism:</span> The value of patriotism embodies self-sacrifice for the sake of the country in order to preserve its honor, with which every PLSPian should share the same sentiment that creates a sense of oneness that induces them to become a better person and a good citizen.</li>
+                <li><span class="bold-text">Leadership:</span> The PLSPians share the value of leadership, which helps to foster both a positive and motivating culture in their self-consciousness to achieve goals and develop leadership skills.</li>
+                <li><span class="bold-text">Service:</span> The PLSPians value service to humanity because they discovered an innate motivation to share compassion and work with underprivileged members of society to improve their lives.</li>
+                <li><span class="bold-text">Professionalism:</span> Professionalism is demonstrated by PLSPians through Competence, Knowledge, Conscientiousness, Integrity, Respect, Emotional Intelligence, Appropriateness, Confidence, and Excellence, adhering to the rules, regulations, and laws applicable to the profession they pursue.</li>
+            </ul>
+        </div>
+
+        <!-- Programs Section -->
+        <div class="dropdown-section" onclick="toggleDropdown('programDropdownContent')">Click to View Programs</div>
+        <div id="programDropdownContent" class="dropdown-content">
+            <ul>
+                <li>Bachelor of Science in Computer Science</li>
+                <li>Bachelor of Science in Information Technology</li>
+                <li>Bachelor of Science in Business Administration</li>
+                <li>Bachelor of Science in Accounting</li>
+                <li>Bachelor of Science in Nursing</li>
+                <li>Bachelor of Arts in Communication</li>
+                <li>Master of Business Administration</li>
+                <li>Master of Public Administration</li>
+                <li>Bachelor of Arts in Political Science</li>
+                <li>Bachelor of Early Childhood Education</li>
+                <li>Bachelor of Physical Education</li>
+                <li>Bachelor of Public Administration</li>
+                <li>Bachelor of Science in Accountancy</li>
+                <li>Bachelor of Science in Computer Engineering</li>
+                <li>Bachelor of Science in Economics</li>
+                <li>Bachelor of Science in Entrepreneurship</li>
+                <li>Bachelor of Science in Tourism Management</li>
+                <li>Bachelor of Technical-Vocational Teacher Education</li>
+                <li>Bachelor of Science in Psychology</li>
+                <li>Bachelor of Arts in Communication</li>
+                <li>Bachelor of Arts in Political Science</li>
+                <li>Bachelor of Early Childhood Education</li>
+                <li>Bachelor of Elementary Education</li>
+                <li>Bachelor of Physical Education</li>
+                <li>Bachelor of Public Administration</li>
+                <li>Bachelor of Science in Accountancy</li>
+                <li>Bachelor of Science in Accounting Information System</li>
+                <li>Bachelor of Science in Business Administration</li>
+                <li>Bachelor of Science in Computer Engineering</li>
+                <li>Bachelor of Science in Economics</li>
+                <li>Bachelor of Science in Entrepreneurship</li>
+                <li>Bachelor of Science in Hospitality Management</li>
+                <li>Bachelor of Science in Information Systems</li>
+                <li>Bachelor of Science in Information Technology</li>
+                <li>Bachelor of Science in Management Accounting</li>
+                <li>Bachelor of Science in Nursing</li>
+                <li>Bachelor of Science in Office Administration</li>
+                <li>Bachelor of Science in Psychology</li>
+                <li>Bachelor of Science in Tourism Management</li>
+                <li>Bachelor of Secondary Education</li>
+                <li>Bachelor of Special Need Education</li>
+                <li>Bachelor of Technical-Vocational Teacher Education</li>
+                <li>Teacher Certificate Program</li>
+            </ul>
+        </div>
+
+        <div class="main-text">
+                        Contact Us<br>
+            Email: info@plsp.edu.ph<br>
+            Phone: (049) 123-4567<br>
+            Address: 456 University Ave, San Pablo City, Laguna
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pamantasan ng Lungsod ng San Pablo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
