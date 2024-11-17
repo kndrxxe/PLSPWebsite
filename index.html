@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Pamantasan Lungsod ng San Pablo</title>
+    <link rel="icon" type="image/x-icon" href="PLSP.png">
+    <title>Welcome to Pamantasan ng Lungsod ng San Pablo</title>
     <style>
+        html {
+  scroll-behavior: smooth;
+}
         body {
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('PLSP1.png');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             color: white;
         }
@@ -36,7 +42,7 @@
         }
         nav {
             background-color: #333;
-            padding: 0.5rem;
+            padding: 0.8rem;
             text-align: center;
         }
         nav a {
@@ -52,26 +58,29 @@
             color: white;
         }
         footer {
-            background-color: #0066cc;
+            background-color: #008000;
             color: white;
             text-align: center;
-            padding: 0.5rem;
-            position: fixed;
+            padding: 0.2rem;
             bottom: 0;
             width: 100%;
+
         }
         .main-text {
             color: white;
             font-size: 1.2rem;
-            line-height: 1.6;
-            padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #008000;
             border-radius: 5px;
-            margin-bottom: 1rem;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.5rem;
+            border: 1px whitesmoke solid;
         }
         .dropdown-section {
             margin-top: 1rem;
             border: 1px solid #ddd;
+            border-radius: 5px 5px 0 0;
             padding: 0.5rem;
             background-color: #333;
             color: white;
@@ -84,6 +93,8 @@
             background-color:#008000;
             padding: 1rem;
             border-top: 1px solid #ddd;
+            border: 1px solid #ddd;
+            border-radius: 0 0 5px 5px;
         }
         .dropdown-content.show {
             display: block;
@@ -101,42 +112,40 @@
 </head>
 <body>
     <header>
-        <img src="PLSP.jpg" alt="Pamantasan ng Lungsod ng San Pablo Logo"> 
+        <img src="PLSP.png" alt="Pamantasan ng Lungsod ng San Pablo Logo"> 
         <h1>Pamantasan ng Lungsod ng San Pablo</h1>
     </header>
-    <nav>
-        <a href="#philosophy" onclick="toggleDropdown('philosophyDropdownContent')">Philosophy</a>
-        <a href="#programs" onclick="toggleDropdown('programDropdownContent')">Programs</a> 
-        <a href="#contact">Contact</a>
-        <a href="#vision" onclick="toggleDropdown('visionDropdownContent')">Vision</a>
-        <a href="#mission" onclick="toggleDropdown('missionDropdownContent')">Mission</a>
-        <a href="#goals" onclick="toggleDropdown('goalsDropdownContent')">Goals</a>
-        <a href="#objectives" onclick="toggleDropdown('objectivesDropdownContent')">Objectives</a>
-        <a href="#quality-policy" onclick="toggleDropdown('qualityPolicyDropdownContent')">Quality Policy</a>
-        <a href="#core-values" onclick="toggleDropdown('coreValuesDropdownContent')">Core Values</a>
+    <nav style="font-weight: bolder;">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#goals">Goals</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#quality-policy">Quality Policy</a>
+        <a href="#core-values">Core Values</a>
     </nav>
     <main>
         <!-- Philosophy Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('philosophyDropdownContent')">Click to View Philosophy</div>
-        <div id="philosophyDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="philosophy" onclick="toggleDropdown('philosophyDropdownContent')"><strong>Philosophy</strong></div>
+        <div id="philosophyDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             The Pamantasan ng Lungsod ng San Pablo is deeply committed towards the integral formation of the human person, with a profound faith in God, in his fellow men and himself by providing its students the full development of their physical, intellectual, social and cultural endowment for effective participation in various professions and industrial occupations and to enable them to enjoy reasonable quality of life to be able to contribute to the upliftment of the human society.
         </div>
 
         <!-- Vision Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('visionDropdownContent')">Click to View Vision</div>
-        <div id="visionDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="vision" onclick="toggleDropdown('visionDropdownContent')"><strong>Vision</strong></div>
+        <div id="visionDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             The Pamantasan ng Lungsod ng San Pablo envisions itself as a Center of Excellence in 2035, upholding glocally-responsive education dedicated to transforming lives and empowering communities.
         </div>
 
         <!-- Mission Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('missionDropdownContent')">Click to View Mission</div>
-        <div id="missionDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="mission" onclick="toggleDropdown('missionDropdownContent')"><strong>Mission</strong></div>
+        <div id="missionDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             The Pamantasan ng Lungsod ng San Pablo mission statement is to create a learning community that generates God-loving and holistic graduates prepared for civic engagement and academic and life success by strengthening and synergizing instruction, research and extension, administration and student development.
         </div>
 
         <!-- Goals Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('goalsDropdownContent')">Click to View Goals</div>
-        <div id="goalsDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="goals" onclick="toggleDropdown('goalsDropdownContent')"><strong>Goals</strong></div>
+        <div id="goalsDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             <ul>
                 <li>University and Academic Excellence</li>
                 <li>Sustainable Linkages and Community Engagement Programs</li>
@@ -147,8 +156,8 @@
         </div>
 
         <!-- Objectives Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('objectivesDropdownContent')">Click to View Objectives</div>
-        <div id="objectivesDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="objectives" onclick="toggleDropdown('objectivesDropdownContent')"><strong>Objectives</strong></div>
+        <div id="objectivesDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             <ul>
                 <li>To provide relevant knowledge and to develop the skills, competencies, habits, attitudes, and values of the students required in the chosen profession.</li>
                 <li>To advance human knowledge through study and research.</li>
@@ -159,14 +168,14 @@
         </div>
 
         <!-- Quality Policy Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('qualityPolicyDropdownContent')">Click to View Quality Policy</div>
-        <div id="qualityPolicyDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="quality-policy" onclick="toggleDropdown('qualityPolicyDropdownContent')"><strong>Quality Policy</strong></div>
+        <div id="qualityPolicyDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             The Pamantasan ng Lungsod ng San Pablo commits to sustainable quality education adhering to the highest standards of excellence in instruction, research, extension, production, and administrative services by upholding a continuous quality management system for client satisfaction through employee and student development anchored on constitutional mandates, statutory, and regulatory requirements while promoting God-loving, safe, and green environment for all.
         </div>
 
         <!-- Core Values Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('coreValuesDropdownContent')">Click to View Core Values</div>
-        <div id="coreValuesDropdownContent" class="dropdown-content">
+        <div class="dropdown-section" id="core-values" onclick="toggleDropdown('coreValuesDropdownContent')"><strong>Core Values</strong></div>
+        <div id="coreValuesDropdownContent" style="background-color:#008000; padding: 1rem; border: 1px solid #ddd; border-radius: 0 0 5px 5px;">
             <ul>
                 <li><span class="bold-text">Patriotism:</span> The value of patriotism embodies self-sacrifice for the sake of the country in order to preserve its honor, with which every PLSPian should share the same sentiment that creates a sense of oneness that induces them to become a better person and a good citizen.</li>
                 <li><span class="bold-text">Leadership:</span> The PLSPians share the value of leadership, which helps to foster both a positive and motivating culture in their self-consciousness to achieve goals and develop leadership skills.</li>
@@ -176,7 +185,7 @@
         </div>
 
         <!-- Programs Section -->
-        <div class="dropdown-section" onclick="toggleDropdown('programDropdownContent')">Click to View Programs</div>
+        <div class="dropdown-section" onclick="toggleDropdown('programDropdownContent')"><strong>View Programs</strong></div>
         <div id="programDropdownContent" class="dropdown-content">
             <ul>
                 <li>Bachelor of Science in Computer Science</li>
@@ -226,9 +235,12 @@
         </div>
 
         <div class="main-text">
-                        Contact Us<br>
-            Email Address: plsp.official@plsp.edu.ph<br>
-            Phone: (049) 536-7830<br>
+            <strong><span style="font-size: 25px;">Contact Us</span></strong>
+            <br><br>
+            Email Address: plsp.official@plsp.edu.ph
+            <br>
+            Phone: (049) 536-7830
+            <br>
             Address: Brgy. San Jose, San Pablo City, Philippines 4000
         </div>
     </main>
